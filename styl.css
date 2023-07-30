@@ -1,0 +1,72 @@
+﻿:root {
+    --main-color: #564f4f;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+body {
+    background-color:#393434;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.main-text {
+    padding: 30px ;
+    width:300px;
+    margin-bottom: 35px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+    .main-text .input-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+        .main-text .input-div input {
+            border: 1px solid var(--main-color);
+            margin: 5px 0;
+            outline: none;
+            padding: 8px 20px;
+        }
+            .main-text .input-div input:focus {
+                outline:2px solid var(--main-color);
+            }
+        .main-text .input-div button {
+            text-align: center;
+            margin-top: 5px;
+            padding: 8px 20px;
+            background-color: var(--main-color);
+            color:white;
+            font-weight:bold;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        .main-text .input-div button:hover {
+            transform:scale(1.1);
+        }
+.mini-boxes {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items:flex-start;
+}
+    .mini-boxes .box {
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        width:250px;
+        text-align:center;
+    }
+        .mini-boxes .box .item{
+            padding:5px 10px;
+            margin:5px;
+            background-color:var(--main-color);
+            color:white;
+            cursor:move;
+        }
